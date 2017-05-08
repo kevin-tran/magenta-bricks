@@ -1,0 +1,10 @@
+table {
+    td {
+        font-size: 17px;
+
+        &:first-child {
+            color: $brand-purple;
+            margin-right: 0.5em;
+        }
+    }
+}

@@ -14,25 +14,25 @@ class Collapse extends React.Component {
     render() {
         return (
         <div className="main__panel">
-        <h1 className="border">Buyer's Details <span onClick={this.toggleTab}>Hide</span></h1>
+        <h1 className="border">Buyer's Details <span onClick={this.toggleTab}><small>Hide</small></span></h1>
         <table style={{display: this.state.toggle ? 'block' : 'none' }}>
             <tbody>
                <tr>
-                    <th>Name:</th>
+                    <td>Name:</td>
                     <td>Mr David Shepherd</td>
                 </tr>
 
                 <tr>
-                    <th>Buying position:</th>
+                    <td>Buying position:</td>
                     <td>Property to sell - 20 weeks on the market</td>
                 </tr>
                 <tr>
-                    <th>Financial position:</th>
+                    <td>Financial position:</td>
                     <td>Mortgage required - approved</td>
                 </tr>
 
                 <tr>
-                     <th>Timescale:</th>
+                     <td>Timescale:</td>
                      <td>Would like to move in 10 weeks - no chain</td>
                 </tr>
             </tbody>
