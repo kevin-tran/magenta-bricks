@@ -1,0 +1,17 @@
+.panel {
+    padding: 1rem 2.5rem;
+    border-radius: 0;
+    border: 1px solid $brand-purple;
+
+    &.alert {
+        background-color: $brand-red;
+        border-color: $brand-red;
+
+        h1 {
+            margin: 0;
+            font-weight: 100;
+            color: #fff;
+            font-size: 22px;
+        }
+    }
+}

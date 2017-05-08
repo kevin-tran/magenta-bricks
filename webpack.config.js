@@ -8,6 +8,7 @@ function getDevTool() {
     return false; 
 }
 
+
 module.exports = {
     entry: {
         main: './src/scripts/main.js'
@@ -27,13 +28,14 @@ module.exports = {
                 }
             },
             {
-                test: /\.scss$/,
-                loader: ExtractTextPlugin.extract('css!sass')
-            }
+                test: /\.scss$/, 
+                loader: ExtractTextPlugin.extract("style", "css!sass") 
+            },
+            { test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' }
         ]
     },
     plugins: [
-        new ExtractTextPlugin('dist/styles/main.css', {
+        new ExtractTextPlugin('dist/styles/app.css', {
             allChunks: true
         })
     ]
