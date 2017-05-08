@@ -3,6 +3,12 @@
     border-radius: 0;
     border: 1px solid $brand-grey;
 
+    h1 {
+        &.border {
+            border-bottom: 1px solid $brand-grey;
+        }
+    }
+
     &.alert {
         background-color: $brand-red;
         border-color: $brand-red;
@@ -19,9 +25,10 @@
     &.purple {
 
         border-color: $brand-purple;
-        
+
         h1 {
-            border-bottom: 1px solid $brand-grey;
+            box-sizing: border-box;
+            display: block;
         }
     }
 }
