@@ -31,12 +31,20 @@ class Input extends React.Component {
         return (
         <div>
         <h1>Enter an offer you would be willing to accept:</h1>
-            <Cleave
+            <div className="row">
+                <div className="col-md-6">
+                <Cleave
+                className="input-field"
                 style={{border: this.state.error ? '1px solid red' : '' }}
                 value={this.state.input}
                 options={{numeralThousandsGroupStyle: true, numeral: true}}
                 onChange={this.onChange} />
+                <button className="button-purple">Add Comments</button>
+                </div>
+                <div className="col-md-6 text-right">
                 <button className="button-blue" onClick={this.showOffer}>Submit offer</button>
+                </div>
+            </div>
         </div>
         );
     }
