@@ -1,10 +1,11 @@
 import React from 'react';
 import Cleave from 'cleave.js/dist/cleave-react';
 
-class Collapse extends React.Component {
+class Input extends React.Component {
     constructor(props) {
         super(props);
-        this.state = ({input: ''});
+        this.state = ({input: '',
+                        error: false});
 
         this.onChange = this.onChange.bind(this);
         this.showOffer = this.showOffer.bind(this);
@@ -15,8 +16,15 @@ class Collapse extends React.Component {
     }
 
     showOffer() {
-        console.log('£' + this.state.input);
-        alert('Your offer was £' + this.state.input);
+        if(this.state.input !== '') {
+            this.setState({error: false});
+            console.log('£' + this.state.input);
+            alert('Your offer was £' + this.state.input);
+        }
+
+        else {
+            this.setState({error: true});
+        }
     }
 
     render() {
@@ -24,6 +32,7 @@ class Collapse extends React.Component {
         <div>
         <h1>Enter an offer you would be willing to accept:</h1>
             <Cleave
+                style={{border: this.state.error ? '1px solid red' : '' }}
                 value={this.state.input}
                 options={{numeralThousandsGroupStyle: true, numeral: true}}
                 onChange={this.onChange} />
@@ -33,4 +42,4 @@ class Collapse extends React.Component {
     }
 }
 
-export default Collapse;
+export default Input;

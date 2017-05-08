@@ -1,6 +1,7 @@
 @mixin button($color, $secondary) {
     background-color: $color;
     padding: 0.2em 0.5em;
+    border: 1px solid $color;
     border-radius: 5px;
     color: #fff;
     font-weight: 700;
@@ -10,6 +11,7 @@
     &:hover {
         background-color: $secondary;
         color: #fff;
+        border: 1px solid $secondary;
         text-decoration: none;
     }
 }
