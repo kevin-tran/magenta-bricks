@@ -21,13 +21,13 @@ class Collapse extends React.Component {
 
     render() {
         return (
-        <div className="main__panel">
+        <div>
         <h1>Enter an offer you would be willing to accept:</h1>
             <Cleave
                 value={this.state.input}
                 options={{numeralThousandsGroupStyle: true, numeral: true}}
                 onChange={this.onChange} />
-                <button className="button-primary" onClick={this.showOffer}>Submit offer</button>
+                <button className="button-blue" onClick={this.showOffer}>Submit offer</button>
         </div>
         );
     }

@@ -1,13 +1,27 @@
-.button-primary {
-    background: $brand-grey;
-    padding: 0.2em;
+@mixin button($color, $secondary) {
+    background-color: $color;
+    padding: 0.2em 0.5em;
     border-radius: 5px;
     color: #fff;
-    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid $color;
+    text-transform: uppercase;
 
     &:hover {
-        background-color: $brand-purple;
+        background-color: $secondary;
         color: #fff;
         text-decoration: none;
     }
+}
+
+.button-grey {
+    @include button($brand-grey, $brand-purple);
+}
+
+.button-blue {
+    @include button($brand-blue, $brand-purple);
+}
+
+.button-purple {
+    @include button($brand-purple, $brand-blue);
 }
