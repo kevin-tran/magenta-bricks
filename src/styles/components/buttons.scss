@@ -1,0 +1,13 @@
+.button-primary {
+    background: $brand-grey;
+    padding: 0.2em;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $brand-purple;
+        color: #fff;
+        text-decoration: none;
+    }
+}

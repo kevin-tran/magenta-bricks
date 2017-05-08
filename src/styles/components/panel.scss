@@ -1,17 +1,27 @@
-.panel {
-    padding: 1rem 2.5rem;
+.main__panel {
+    padding: 0.8rem 2.5rem;
     border-radius: 0;
-    border: 1px solid $brand-purple;
+    border: 1px solid $brand-grey;
 
     &.alert {
         background-color: $brand-red;
         border-color: $brand-red;
+        margin-bottom: 0;
 
         h1 {
             margin: 0;
             font-weight: 100;
             color: #fff;
             font-size: 22px;
+        }
+    }
+
+    &.purple {
+
+        border-color: $brand-purple;
+        
+        h1 {
+            border-bottom: 1px solid $brand-grey;
         }
     }
 }
