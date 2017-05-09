@@ -17,28 +17,28 @@ Run an npm install and it should get all of the dependencies. From there, you ju
 
 3. **Make the "Buyer's details" box collapse/expand when user presses hide/show in top right corner. ✓**
 
-The chevron changes to up/down depending on state of the dropdown
+The chevron changes to up/down depending on state of the dropdown.
 
 4. **When users clicks the 'submit offer' button, validate the price, show an in-line error message accordingly. The price must be formatted into Integer. Put the price in a dummy object and output its contents to the console. ✓**
 
-I've made some assumptions in that the price validation is so you can't enter letters into the input field. On submit, it does an alert as well as a console log
+I've made some assumptions (Price validation means it sanitizes the input for only numbers). On submit, it does an alert as well as a console log.
 
 5. **The page must be responsive. ✓**
 
 6. **Use MVVM library/framework such as KnockoutJS or ReactJS etc. ✓**
 
-React is used for both the input field and drop down
+React is used for both the input field and drop down.
 
 7. **Format the price input (180,000 instead of 180000) as the user types ✓**
 
-Leveraged a library to format on input
+Leveraged a library (CleaveJS) to format on input.
 
 8. **Use build tools (Gulp, Grunt etc.) ✓**
 
-Webpack is primarily for the hot reloading and auto transpiling of SASS and ES5/6. For the sake of the prototype, it hasn't really leveraged the bundling, but I've kept the components reasonably modular.
+Webpack is used primarily for the hot reloading and auto transpiling of SASS and ES5/6. For the sake of the prototype, it hasn't really leveraged the bundling, but I've kept the components reasonably modular.
 
 # Challenges: 
 
-- Unsure if this was intentional but all of the buttons and font sizing is different across the board. While there is definitely hierarchy on the page, I personally prefer to work with defined styles for fonts, headings, buttons etc to help with consistency. 
+- Unsure if this was intentional but all of the buttons and font sizing is different across the board. I couldn't get exact fonts used in the PSD, so I grabbed the closest I could with Typekit. 
 - The home logo was an interesting one. Although not 1:1, I feel it is a reasonable compromise and stays true to the designs.
 - This ties into the first point, but there are a lot of messy responsive overrides made to different buttons to stay aligned with the design. Could have been dealt with more elegantly.
