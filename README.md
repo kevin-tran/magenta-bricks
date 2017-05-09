@@ -5,6 +5,10 @@ To whom it may concern, this is my attempt at the coding challenge. For the sake
 - Optimization out of the box, webpack will completely minify a production ready build.
 - Quality of life measures: allows the compiling of ES5 and sass painlessly. Using gulp to do this can be quite involved, as well as things like Hot Reloading are much easier to get without having to patch on more plugins.
 
+# How to use: 
+
+Run an npm install and it should get all of the dependencies. From there, you just type ```npm run start```. Then go to [here](http://localhost:8080/) to access it locally.
+
 # Requirements: 
 
 1. **Use HTML5/SASS/JavaScript/Bootstrap  ✓**
