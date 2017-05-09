@@ -1,17 +1,76 @@
-.panel {
-    padding: 1rem 2.5rem;
+.main__panel {
+    padding: 2.5rem 4rem;
     border-radius: 0;
-    border: 1px solid $brand-purple;
+    border: 1px solid $brand-grey;
+    margin-bottom: 3.5rem;
+    height: 100%;
+    
+
+    h1 {
+        margin: 0;
+        padding-bottom: 1rem;
+
+        &.border {
+            border-bottom: 1px solid $brand-grey;
+            margin-bottom: 1.5rem;
+        }
+        small {
+            text-transform: uppercase;
+            color: $brand-purple-light;
+            float: right;
+            line-height: 28px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+    }
+
+    h6 {
+        margin-bottom: 13px;
+    }
 
     &.alert {
         background-color: $brand-red;
         border-color: $brand-red;
+        margin-bottom: 1.5rem;
+        padding: 0.8rem 4rem;
 
         h1 {
             margin: 0;
+            padding: 0;
             font-weight: 100;
             color: #fff;
             font-size: 22px;
         }
+    }
+
+    &.purple {
+
+        border-color: $brand-purple;
+
+        h1 {
+            box-sizing: border-box;
+            display: block;
+        }
+    }
+
+    &.reject {
+        border: 2px solid $brand-red;
+        background-color: $panel-grey;
+
+        h1 {
+            color: $brand-red;
+        }
+    }
+
+    &.padding-sm {
+        padding: 1rem 3rem;
+        margin-top: 3.5rem;
+    }
+    
+    .fa-gbp {
+        font-size: 4rem;
+        line-height: 42px;
+        position: absolute;
+        color: $brand-grey;
     }
 }

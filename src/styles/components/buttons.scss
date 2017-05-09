@@ -1,0 +1,32 @@
+@mixin button($color, $secondary) {
+    background-color: $color;
+    padding: 0.1em 0.5em;
+    border: 1px solid $color;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    border: 1px solid $color;
+    text-transform: uppercase;
+    font-family: "Arial", sans-serif;
+
+    &:hover {
+        background-color: $secondary;
+        color: #fff;
+        border: 1px solid $secondary;
+        text-decoration: none;
+    }
+}
+
+.button-grey {
+    @include button($brand-grey, $brand-purple);
+}
+
+.button-blue {
+    @include button($brand-blue, $brand-purple);
+    font-size: 22px;
+}
+
+.button-purple {
+    @include button($brand-purple-light, $brand-blue);
+}

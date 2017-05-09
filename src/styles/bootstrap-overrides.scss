@@ -1,12 +1,51 @@
-.container {
-    margin-bottom: 1em;
-}
-
 .text-left {
     text-align: left;
 }
 
 .text-right {
     text-align: right;
+
+    @media(max-width: $screen-sm-max) {
+        text-align: left;
+    }
 }
 
+.margin-top-sm {
+    margin-top: 1rem;
+}
+
+// responsive fixes
+
+.button-padding-top-fix {
+    margin-top: 1.5rem;
+
+    @media(max-width: $screen-sm-max) {
+        margin-bottom: 1rem;
+    }
+}
+
+.button-padding-sm-spacing-fix {
+    @media(max-width: $screen-sm-max) {
+        margin-top: 2rem;
+    }
+}
+
+.button-padding-fix {
+    margin-top: 2rem;
+    
+    @media(min-width: $screen-sm-max) {
+        margin-left: 3rem;
+    }
+}
+
+.property-fix {
+    @media(min-width: $screen-md-max) {
+        margin-left: -3rem;
+    }
+}
+
+.hidden-sm {
+    @media(max-width: $screen-md-max) {
+        display: none;
+    }
+}
