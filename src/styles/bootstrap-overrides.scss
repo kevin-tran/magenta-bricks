@@ -1,21 +1,15 @@
-.container {
-    margin-bottom: 1em;
-}
-
 .text-left {
     text-align: left;
 }
 
 .text-right {
     text-align: right;
+
+    @media(max-width: $screen-sm-max) {
+        text-align: left;
+    }
 }
 
 .margin-top-sm {
     margin-top: 1rem;
-}
-
-.same-height-col {
-    > * {
-        min-height: 250px;
-    }
 }

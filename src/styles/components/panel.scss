@@ -2,17 +2,17 @@
     padding: 2.5rem 4rem;
     border-radius: 0;
     border: 1px solid $brand-grey;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
     height: 100%;
     
 
     h1 {
         margin: 0;
-        padding-bottom: 0.8rem;
+        padding-bottom: 1rem;
 
         &.border {
             border-bottom: 1px solid $brand-grey;
-            margin-bottom: 2.5rem;
+            margin-bottom: 1.5rem;
         }
         small {
             text-transform: uppercase;
@@ -27,7 +27,7 @@
     &.alert {
         background-color: $brand-red;
         border-color: $brand-red;
-        margin-bottom: 0;
+        margin-bottom: 1.5rem;
         padding: 0.8rem 4rem;
 
         h1 {
@@ -58,6 +58,15 @@
         }
     }
 
+    &.equal-col {
+        min-width: 250px;
+    }
+
+    &.padding-sm {
+        padding: 1rem 3rem;
+        margin-top: 3.5rem;
+    }
+
     .input-field {
         height: 4rem;
         border-radius: 3px;
@@ -66,5 +75,10 @@
         font-weight: 700;
         border: 1px solid $brand-grey;
         margin-bottom: 2rem;
+        width: 60%;
+
+        @media(max-width: $screen-sm-max) {
+            width: 100%;
+        }
     }
 }

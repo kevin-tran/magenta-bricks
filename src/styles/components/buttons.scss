@@ -24,6 +24,7 @@
 
 .button-blue {
     @include button($brand-blue, $brand-purple);
+    font-size: 22px;
 }
 
 .button-purple {
