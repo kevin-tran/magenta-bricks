@@ -42,15 +42,10 @@ class Input extends React.Component {
                 options={{numeralThousandsGroupStyle: true, numeral: true}}
                 onChange={this.onChange} />
                 <h3 style={{display: this.state.error ? 'block' : 'none' }}>Please enter a value</h3>
+                <button className="button-purple button-padding-fix">Add Comments</button>
                 </div>
                 <div className="col-md-6 text-right">
                 <button className="button-blue button-padding-sm-spacing-fix" onClick={this.showOffer}>Submit offer</button>
-                </div>
-            </div>
-
-            <div className="row">
-                <div className="col-md-6">
-                    <button className="button-purple button-padding-fix">Add Comments</button>
                 </div>
             </div>
         </div>

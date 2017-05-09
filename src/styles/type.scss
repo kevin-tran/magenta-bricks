@@ -18,11 +18,19 @@ p {
 h1 {
     font-weight: 700;
     font-size: 30px;
+
+    @media(max-width: $screen-sm-min) {
+        font-size: 24px;
+    }
 }
 
 h2 {
     font-size: 24px;
     font-weight: 700;
+
+    @media(max-width: $screen-sm-min) {
+        font-size: 20px;
+    }
 }
 
 h3 {
@@ -32,6 +40,10 @@ h3 {
     color: $brand-purple;
     font-weight: 700;
     margin: 0.5rem 0;
+
+    @media(max-width: $screen-sm-min) {
+        font-size: 16px;
+    }
 }
 
 h6 {
