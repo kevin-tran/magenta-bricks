@@ -4,10 +4,11 @@
     border: 1px solid $color;
     border-radius: 5px;
     color: #fff;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 18px;
     border: 1px solid $color;
     text-transform: uppercase;
+    font-family: "Arial", sans-serif;
 
     &:hover {
         background-color: $secondary;

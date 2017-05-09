@@ -10,3 +10,12 @@
     text-align: right;
 }
 
+.margin-top-sm {
+    margin-top: 1rem;
+}
+
+.same-height-col {
+    > * {
+        min-height: 250px;
+    }
+}

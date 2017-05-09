@@ -3,6 +3,7 @@
     border-radius: 0;
     border: 1px solid $brand-grey;
     margin-bottom: 1.5rem;
+    height: 100%;
     
 
     h1 {
@@ -45,6 +46,15 @@
         h1 {
             box-sizing: border-box;
             display: block;
+        }
+    }
+
+    &.reject {
+        border: 2px solid $brand-red;
+        background-color: $panel-grey;
+
+        h1 {
+            color: $brand-red;
         }
     }
 
