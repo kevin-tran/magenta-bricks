@@ -9,10 +9,12 @@ footer {
 
         li {
             padding: 0 2rem 0 0;
-            margin: 1.2rem 0;
+            margin: 2rem 0;
+            
             @media(min-width: $screen-sm-min) {
-                display: inline-block;
-                
+                    display: inline-block;
+                    margin: 1.2rem 0;
+                    
                     &:not(:first-child) {
                     padding: 0 1.5rem;
                     border-left: 1px solid #fff;
