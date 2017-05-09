@@ -44,7 +44,7 @@ class Input extends React.Component {
                 <h3 style={{display: this.state.error ? 'block' : 'none' }}>Please enter a value</h3>
                 </div>
                 <div className="col-md-6 text-right">
-                <button className="button-blue" onClick={this.showOffer}>Submit offer</button>
+                <button className="button-blue button-padding-sm-spacing-fix" onClick={this.showOffer}>Submit offer</button>
                 </div>
             </div>
 

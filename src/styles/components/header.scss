@@ -23,5 +23,11 @@ header {
             text-decoration: none;
         }
     }
+
+    .padding-fix {
+        @media(min-width: $screen-md-min) {
+            margin-top: 5.8rem;
+        }
+    }
 }
 

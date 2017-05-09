@@ -24,6 +24,10 @@
         }
     }
 
+    h6 {
+        margin-bottom: 13px;
+    }
+
     &.alert {
         background-color: $brand-red;
         border-color: $brand-red;
@@ -56,10 +60,6 @@
         h1 {
             color: $brand-red;
         }
-    }
-
-    &.equal-col {
-        min-width: 250px;
     }
 
     &.padding-sm {

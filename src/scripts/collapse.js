@@ -14,7 +14,7 @@ class Collapse extends React.Component {
     render() {
         return (
         <div className="main__panel">
-        <h1 className="border">Buyer's Details <small  onClick={this.toggleTab}>Hide <i className={"fa fa-angle-" + (this.state.toggle ? 'down' : 'up')} aria-hidden="true"></i></small></h1>
+        <h1 className="border">Buyer's details <small  onClick={this.toggleTab}>Hide <i className={"fa fa-angle-" + (this.state.toggle ? 'down' : 'up')} aria-hidden="true"></i></small></h1>
         <table style={{display: this.state.toggle ? 'block' : 'none' }}>
             <tbody>
                <tr>
