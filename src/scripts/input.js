@@ -12,6 +12,7 @@ class Input extends React.Component {
     }
 
     onChange(e) {
+            this.setState({error: false});
             this.setState({input: e.target.value});
     }
 
@@ -33,16 +34,23 @@ class Input extends React.Component {
         <h1>Enter an offer you would be willing to accept:</h1>
             <div className="row">
                 <div className="col-md-6">
+                <i className="fa fa-gbp" aria-hidden="true"></i>
                 <Cleave
                 className="input-field"
                 style={{border: this.state.error ? '1px solid red' : '' }}
                 value={this.state.input}
                 options={{numeralThousandsGroupStyle: true, numeral: true}}
                 onChange={this.onChange} />
-                <button className="button-purple">Add Comments</button>
+                <h3 style={{display: this.state.error ? 'block' : 'none' }}>Please enter a value</h3>
                 </div>
                 <div className="col-md-6 text-right">
                 <button className="button-blue" onClick={this.showOffer}>Submit offer</button>
+                </div>
+            </div>
+
+            <div className="row">
+                <div className="col-md-6">
+                    <button className="button-purple button-padding-fix">Add Comments</button>
                 </div>
             </div>
         </div>

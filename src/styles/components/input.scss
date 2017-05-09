@@ -1,0 +1,24 @@
+#input {
+    .input-field {
+            border-radius: 3px;
+            font-size: 3rem;
+            padding: 0 1rem;
+            font-weight: 700;
+            border: 1px solid #acacac;
+            width: 60%;
+            margin-left: 3rem;
+
+        @media(max-width: $screen-sm-max) {
+            width: 95%;
+        }
+    }
+
+    h1, h3 {
+        margin-left: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        color: $brand-red;
+    }
+}

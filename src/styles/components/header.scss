@@ -18,6 +18,10 @@ header {
         .font-logo-secondary {
             font-size: 2.5rem;
         }
+
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
 
