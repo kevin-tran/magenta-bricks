@@ -72,5 +72,9 @@
         line-height: 42px;
         position: absolute;
         color: $brand-grey;
+
+        @media(max-width: $screen-sm-max) {
+            margin-left: -0.8em;
+        }
     }
 }
