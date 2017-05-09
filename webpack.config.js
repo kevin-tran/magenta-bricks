@@ -8,7 +8,6 @@ function getDevTool() {
     return false; 
 }
 
-
 module.exports = {
     entry: {
         main: './src/scripts/main.js'
