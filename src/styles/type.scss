@@ -54,4 +54,8 @@ h6 {
         color: $brand-black;
         margin-top: 0;
     }
+
+    @media(max-width: $screen-sm-max) {
+        margin-top: 2rem;
+    }
 }

@@ -39,8 +39,14 @@
 }
 
 .property-fix {
+    margin: 0;
+    
     @media(min-width: $screen-md-max) {
         margin-left: -3rem;
+    }
+
+    @media(max-width: $screen-md-min) {
+        margin: 2rem 0;
     }
 }
 
