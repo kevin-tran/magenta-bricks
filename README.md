@@ -1,9 +1,13 @@
-# Magneta Bricks - Kevin Tran
+# [Magneta Bricks](https://kevin-tran.github.io/magenta-bricks/) - Kevin Tran
 
 To whom it may concern, this is my attempt at the coding challenge. For the sake of an mvp to present, I've used [this](https://github.com/srinisoundar/react-webpack-babel-kit) as the boilerplate. I know from the requirements that React components need to be made, so I'm making some technical assumptions before I get too deep into the project. This has been chosen for the following requirements:
 
 - Optimization out of the box, webpack will completely minify a production ready build.
 - Quality of life measures: allows the compiling of ES5 and sass painlessly. Using gulp to do this can be quite involved, as well as things like Hot Reloading are much easier to get without having to patch on more plugins.
+
+# How to use: 
+
+Run an npm install and it should get all of the dependencies. From there, you just type ```npm run start```. Then go to [here](http://localhost:8080/) to access it locally.
 
 # Requirements: 
 
@@ -12,6 +16,7 @@ To whom it may concern, this is my attempt at the coding challenge. For the sake
 2. **Create page called index.html ✓**
 
 3. **Make the "Buyer's details" box collapse/expand when user presses hide/show in top right corner. ✓**
+
 The chevron changes to up/down depending on state of the dropdown
 
 4. **When users clicks the 'submit offer' button, validate the price, show an in-line error message accordingly. The price must be formatted into Integer. Put the price in a dummy object and output its contents to the console. ✓**
