@@ -12,6 +12,7 @@ To whom it may concern, this is my attempt at the coding challenge. For the sake
 2. **Create page called index.html ✓**
 
 3. **Make the "Buyer's details" box collapse/expand when user presses hide/show in top right corner. ✓**
+
 The chevron changes to up/down depending on state of the dropdown
 
 4. **When users clicks the 'submit offer' button, validate the price, show an in-line error message accordingly. The price must be formatted into Integer. Put the price in a dummy object and output its contents to the console. ✓**
